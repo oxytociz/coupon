@@ -7,6 +7,11 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+group :development do
+  gem 'rspec-rails', '2.1.0'
+  gem 'annotate-models', '1.0.4'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
