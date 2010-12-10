@@ -1,4 +1,6 @@
 Coupon::Application.routes.draw do
+  resources :customers
+
   get "pages/home"
 
   # The priority is based upon order of creation:
