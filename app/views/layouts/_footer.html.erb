@@ -1,3 +1,5 @@
+
+
 <% if ENV["RAILS_ENV"] == "development" %>
       <div id="debug">
         <a href="#" onclick="Element.toggle('params_debug_info');return false">
@@ -8,7 +10,7 @@
         env</a> |
         <a href="#" onclick="Element.toggle('request_debug_info');return false">
         request</a>
-        <fieldset id="params_debug_info" class="debug_info" style="display: none">
+        <fieldset id="params_debug_info" class="debug_info" >
           <legend>params</legend>
           <%= debug(params) %>
         </fieldset>

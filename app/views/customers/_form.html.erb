@@ -10,28 +10,44 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name %>
-  </div>
-  <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <fieldset class="group-select">
+    <h1>"ลงทะเบียน" <span>หรือ</span> <a href="#">เข้าระบบ</a></h1>
+      <ul>
+        <li>
+          <div class="customer-name">
+            <div class="field">
+                <%= f.label :first_name %><br />
+                <%= f.text_field :first_name %>
+            </div>
+            <div class="field">
+            <%= f.label :last_name %><br />
+            <%= f.text_field :last_name %>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="field">
+            <%= f.label :email %><br />
+            <%= f.text_field :email %>
+          </div>
+        </li>
+        <li>
+          <div class="field">
+            <%= f.label :password %><br />
+            <%= f.password_field :password %>
+          </div>
+        </li>
+        <li>
+          <div class="field">
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation %>
+          </div>
+        </li>
+        <li>
+          <div class="actions">
+            <%= f.submit %>
+          </div>
+        </li>
+      </ul>
+  </fieldset>
 <% end %>
